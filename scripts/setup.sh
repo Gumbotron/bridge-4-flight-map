@@ -13,8 +13,14 @@ npm install
 
 # Setup .env if needed
 if [ ! -f .env ]; then
-    [ -f .env.example ] && cp .env.example .env
-    echo "✅ Created .env file"
+    if [ -f .env.example ]; then
+        cp .env.example .env
+        echo "✅ Created .env file"
+    else
+        echo "⚠️  No .env.example found, skipping .env creation"
+    fi
+else
+    echo "✅ .env file already exists"
 fi
 
 echo ""

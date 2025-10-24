@@ -67,9 +67,15 @@ done
 echo ""
 echo "🔍 Running linter check..."
 if npx eslint . --ext js,jsx 2>/dev/null; then
-    echo "✅ Linter check passed"
+    echo "✅ Linter check passed (no errors)"
 else
-    echo "⚠️  Linter found issues. Run 'npm run lint' to see details."
+    EXIT_CODE=$?
+    if [ $EXIT_CODE -eq 1 ]; then
+        echo "⚠️  Linter found warnings or errors. Run 'npm run lint' for details."
+    else
+        echo "❌ Linter configuration issue. Check .eslintrc.cjs"
+        exit 1
+    fi
 fi
 
 # Test build
