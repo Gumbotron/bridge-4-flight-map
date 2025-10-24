@@ -1,0 +1,44 @@
+# Code Owners for Bridge 4 Flight Map
+
+# Default owners for everything in the repo
+# These owners will be the default owners for everything in the repo.
+# Unless a later match takes precedence, these owners will be requested for
+# review when someone opens a pull request.
+* @Gumbotron
+
+# Documentation
+*.md @Gumbotron
+/docs/ @Gumbotron
+
+# GitHub Configuration
+/.github/ @Gumbotron
+
+# Core React Components
+/src/components/ @Gumbotron
+
+# Map and Geolocation
+/src/components/Map.jsx @Gumbotron
+/src/components/Geolocation.jsx @Gumbotron
+/src/hooks/useGeolocation.js @Gumbotron
+/src/hooks/useMapLayers.js @Gumbotron
+
+# Data Loading and Processing
+/src/utils/dataLoader.js @Gumbotron
+/src/utils/zoneFilters.js @Gumbotron
+/src/utils/geoHelpers.js @Gumbotron
+
+# Styling
+/src/styles/ @Gumbotron
+/tailwind.config.js @Gumbotron
+
+# Build Configuration
+/vite.config.js @Gumbotron
+/package.json @Gumbotron
+/package-lock.json @Gumbotron
+
+# CI/CD and Deployment
+/.github/workflows/ @Gumbotron
+/DEPLOYMENT.md @Gumbotron
+
+# Environment Configuration
+/.env.example @Gumbotron
