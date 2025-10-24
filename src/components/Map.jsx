@@ -228,7 +228,7 @@ function Map({ layers, setSelectedZone, userLocation }) {
         )}
 
         {/* Custom POIs */}
-        {!loading && geoData.customPOIs && geoData.customPOIs.features.length > 0 && (
+        {!loading && layers.customPOIs && geoData.customPOIs && geoData.customPOIs.features.length > 0 && (
           <GeoJSON
             key="custom-pois"
             data={geoData.customPOIs}
