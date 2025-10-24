@@ -1,0 +1,84 @@
+/* Leaflet Map Customization */
+
+/* Override Leaflet default styles */
+.leaflet-container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+/* Z-index fixes */
+.leaflet-control-container {
+  z-index: 800;
+}
+
+.leaflet-pane {
+  z-index: 400;
+}
+
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 900;
+}
+
+/* Custom map controls */
+.leaflet-control-zoom a {
+  background-color: #2c4a7c;
+  color: #00d4ff;
+  border-color: #00d4ff;
+}
+
+.leaflet-control-zoom a:hover {
+  background-color: #1a2a4a;
+  color: #4a9eff;
+}
+
+/* Popup styling */
+.leaflet-popup-content-wrapper {
+  background-color: #1a2a4a;
+  color: #ffffff;
+  border: 2px solid #00d4ff;
+  border-radius: 8px;
+}
+
+.leaflet-popup-tip {
+  background-color: #1a2a4a;
+}
+
+.leaflet-popup-content {
+  margin: 12px;
+  font-size: 14px;
+}
+
+/* Custom marker styles */
+.user-location-marker {
+  background-color: #00d4ff;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.6);
+}
+
+/* Zone styling */
+.legal-zone {
+  fill: #2d7d2d;
+  fill-opacity: 0.3;
+  stroke: #2d7d2d;
+  stroke-width: 2;
+}
+
+.exclusion-zone {
+  fill: #c4453d;
+  fill-opacity: 0.4;
+  stroke: #c4453d;
+  stroke-width: 2;
+}
+
+.warning-zone {
+  fill: #f59e0b;
+  fill-opacity: 0.3;
+  stroke: #f59e0b;
+  stroke-width: 2;
+  stroke-dasharray: 5, 5;
+}
