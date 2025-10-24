@@ -4,7 +4,7 @@ import Geolocation from './Geolocation'
 import POIUpload from './POIUpload'
 import InfoPanel from './InfoPanel'
 
-function Sidebar({ layers, setLayers, selectedZone }) {
+function Sidebar({ layers, setLayers, selectedZone, setUserLocation }) {
   const [activeTab, setActiveTab] = useState('layers')
   const [isCollapsed, setIsCollapsed] = useState(false)
 
@@ -85,7 +85,7 @@ function Sidebar({ layers, setLayers, selectedZone }) {
       <div className="flex-1 overflow-y-auto p-4">
         {activeTab === 'layers' && (
           <div className="space-y-4">
-            <Geolocation />
+            <Geolocation setUserLocation={setUserLocation} />
             
             <div className="space-y-3">
               <h3 className="text-lg font-semibold text-storm-radiant">Layer Toggles</h3>
@@ -128,6 +128,16 @@ function Sidebar({ layers, setLayers, selectedZone }) {
                   className="w-5 h-5 text-warning-amber rounded focus:ring-storm-radiant"
                 />
                 <span>Controlled Airspace</span>
+              </label>
+
+              <label className="flex items-center space-x-3 cursor-pointer hover:bg-storm-deep p-2 rounded transition-colors">
+                <input
+                  type="checkbox"
+                  checked={layers.customPOIs}
+                  onChange={() => handleLayerToggle('customPOIs')}
+                  className="w-5 h-5 text-warning-amber rounded focus:ring-storm-radiant"
+                />
+                <span>Custom POIs</span>
               </label>
             </div>
 

@@ -1,0 +1,97 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-79.65, 43.65],
+          [-79.60, 43.65],
+          [-79.60, 43.70],
+          [-79.65, 43.70],
+          [-79.65, 43.65]
+        ]]
+      },
+      "properties": {
+        "name": "Toronto Pearson Airport Buffer Zone",
+        "type": "exclusion_zone",
+        "status": "exclusion",
+        "description": "No-fly zone within 3 nautical miles of Pearson International Airport. Special authorization required.",
+        "data_source": "Transport Canada",
+        "last_updated": "2025-10-24",
+        "restrictions": "Absolutely no drone operations without special authorization from Transport Canada.",
+        "contact": "Transport Canada Regional Office"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-79.40, 43.78],
+          [-79.35, 43.78],
+          [-79.35, 43.83],
+          [-79.40, 43.83],
+          [-79.40, 43.78]
+        ]]
+      },
+      "properties": {
+        "name": "Buttonville Airport Area",
+        "type": "exclusion_zone",
+        "status": "exclusion",
+        "description": "Restricted airspace around Buttonville Municipal Airport.",
+        "data_source": "Transport Canada",
+        "last_updated": "2025-10-24",
+        "restrictions": "Controlled airspace. Authorization required for drone operations.",
+        "contact": "Buttonville Airport Authority"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-79.38, 43.64],
+          [-79.35, 43.64],
+          [-79.35, 43.68],
+          [-79.38, 43.68],
+          [-79.38, 43.64]
+        ]]
+      },
+      "properties": {
+        "name": "Toronto Downtown Core",
+        "type": "exclusion_zone",
+        "status": "exclusion",
+        "description": "Densely populated urban area. Restrictions apply to recreational drone operations.",
+        "data_source": "Municipal Regulations",
+        "last_updated": "2025-10-24",
+        "restrictions": "Recreational drones prohibited. Commercial operations require special permits.",
+        "contact": "City of Toronto"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-79.50, 43.85],
+          [-79.47, 43.85],
+          [-79.47, 43.88],
+          [-79.50, 43.88],
+          [-79.50, 43.85]
+        ]]
+      },
+      "properties": {
+        "name": "Canada's Wonderland Special Event Area",
+        "type": "exclusion_zone",
+        "status": "warning",
+        "description": "Temporary flight restrictions during special events and high attendance days.",
+        "data_source": "Local Authority",
+        "last_updated": "2025-10-24",
+        "restrictions": "Check for temporary flight restrictions. Avoid flying over crowds.",
+        "contact": "York Regional Police"
+      }
+    }
+  ]
+}

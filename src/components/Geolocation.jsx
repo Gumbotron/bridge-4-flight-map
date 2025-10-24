@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import useGeolocation from '../hooks/useGeolocation'
 
-function Geolocation() {
+function Geolocation({ setUserLocation }) {
   const { location, loading, error, getCurrentLocation } = useGeolocation()
   const [showLocation, setShowLocation] = useState(false)
 
@@ -9,6 +9,13 @@ function Geolocation() {
     getCurrentLocation()
     setShowLocation(true)
   }
+
+  // Update parent component when location changes
+  React.useEffect(() => {
+    if (location && setUserLocation) {
+      setUserLocation(location)
+    }
+  }, [location, setUserLocation])
 
   return (
     <div className="mb-4">

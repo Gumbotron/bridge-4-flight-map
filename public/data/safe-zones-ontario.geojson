@@ -1,0 +1,71 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-79.50, 43.80],
+          [-79.40, 43.80],
+          [-79.40, 43.90],
+          [-79.50, 43.90],
+          [-79.50, 43.80]
+        ]]
+      },
+      "properties": {
+        "name": "Vaughan Open Area",
+        "type": "safe_zone",
+        "status": "legal",
+        "description": "Open area suitable for recreational drone flight. Follow Transport Canada regulations.",
+        "data_source": "Custom Dataset",
+        "last_updated": "2025-10-24",
+        "restrictions": "Follow Transport Canada basic safety rules. Maximum altitude 400 feet AGL."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-79.35, 43.75],
+          [-79.25, 43.75],
+          [-79.25, 43.85],
+          [-79.35, 43.85],
+          [-79.35, 43.75]
+        ]]
+      },
+      "properties": {
+        "name": "Richmond Hill Recreation Area",
+        "type": "safe_zone",
+        "status": "legal",
+        "description": "Designated area for recreational drone activities. Always maintain visual line of sight.",
+        "data_source": "Custom Dataset",
+        "last_updated": "2025-10-24",
+        "restrictions": "Daylight operations only. Respect privacy and property rights."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-79.60, 43.60],
+          [-79.50, 43.60],
+          [-79.50, 43.70],
+          [-79.60, 43.70],
+          [-79.60, 43.60]
+        ]]
+      },
+      "properties": {
+        "name": "Mississauga West Open Space",
+        "type": "safe_zone",
+        "status": "legal",
+        "description": "Open recreational area suitable for drone flight under Transport Canada regulations.",
+        "data_source": "Custom Dataset",
+        "last_updated": "2025-10-24",
+        "restrictions": "Recreational flight only. Stay clear of populated areas."
+      }
+    }
+  ]
+}
