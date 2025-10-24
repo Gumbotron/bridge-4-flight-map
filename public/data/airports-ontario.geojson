@@ -1,0 +1,81 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.6306, 43.6777]
+      },
+      "properties": {
+        "name": "Toronto Pearson International Airport (YYZ)",
+        "type": "airport",
+        "icao_code": "CYYZ",
+        "aerodrome_type": "certified",
+        "buffer_nm": 5.5,
+        "description": "Canada's largest and busiest airport. Major international hub.",
+        "data_source": "Transport Canada",
+        "last_updated": "2025-10-24",
+        "contact": "Greater Toronto Airports Authority",
+        "status": "exclusion"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.3658, 43.8625]
+      },
+      "properties": {
+        "name": "Buttonville Municipal Airport (CYKZ)",
+        "type": "airport",
+        "icao_code": "CYKZ",
+        "aerodrome_type": "registered",
+        "buffer_nm": 3,
+        "description": "Municipal airport serving general aviation and business aircraft.",
+        "data_source": "Transport Canada",
+        "last_updated": "2025-10-24",
+        "contact": "Buttonville Airport",
+        "status": "exclusion"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.3963, 43.6286]
+      },
+      "properties": {
+        "name": "Billy Bishop Toronto City Airport (YTZ)",
+        "type": "airport",
+        "icao_code": "CYTZ",
+        "aerodrome_type": "certified",
+        "buffer_nm": 3,
+        "description": "Downtown Toronto island airport serving regional flights.",
+        "data_source": "Transport Canada",
+        "last_updated": "2025-10-24",
+        "contact": "PortsToronto",
+        "status": "exclusion"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.9269, 43.1753]
+      },
+      "properties": {
+        "name": "John C. Munro Hamilton International Airport (YHM)",
+        "type": "airport",
+        "icao_code": "CYHM",
+        "aerodrome_type": "certified",
+        "buffer_nm": 3,
+        "description": "International airport serving the Hamilton region.",
+        "data_source": "Transport Canada",
+        "last_updated": "2025-10-24",
+        "contact": "TradePort International",
+        "status": "exclusion"
+      }
+    }
+  ]
+}

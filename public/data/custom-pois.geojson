@@ -1,0 +1,46 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.4520, 43.8365]
+      },
+      "properties": {
+        "name": "Promenade Meadows Park",
+        "type": "custom_poi",
+        "status": "warning",
+        "description": "Local park area - exercise caution when flying. Check for local bylaws and respect privacy of nearby residents.",
+        "data_source": "Custom POI",
+        "last_updated": "2025-10-24",
+        "restrictions": "Follow municipal bylaws. Avoid flying over people or private property. Maintain safe distance from playground areas.",
+        "rating": "yellow",
+        "notes": "Good flying spot but be mindful of park visitors and surrounding residential areas."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-79.4570, 43.8340],
+          [-79.4470, 43.8340],
+          [-79.4470, 43.8390],
+          [-79.4570, 43.8390],
+          [-79.4570, 43.8340]
+        ]]
+      },
+      "properties": {
+        "name": "Promenade Meadows Area",
+        "type": "custom_zone",
+        "status": "warning",
+        "description": "Residential area near Promenade Meadows. Use caution - yellow rated zone.",
+        "data_source": "Custom Dataset",
+        "last_updated": "2025-10-24",
+        "restrictions": "Respect privacy. Fly during daylight hours only. Keep noise to minimum.",
+        "rating": "yellow"
+      }
+    }
+  ]
+}

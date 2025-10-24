@@ -9,9 +9,11 @@ function App() {
     exclusionZones: true,
     airports: true,
     controlledAirspace: true,
+    customPOIs: true,
   })
 
   const [selectedZone, setSelectedZone] = useState(null)
+  const [userLocation, setUserLocation] = useState(null)
 
   return (
     <div className="app-container h-screen flex flex-col bg-storm-deep">
@@ -33,10 +35,12 @@ function App() {
           layers={layers} 
           setLayers={setLayers}
           selectedZone={selectedZone}
+          setUserLocation={setUserLocation}
         />
         <Map 
           layers={layers}
           setSelectedZone={setSelectedZone}
+          userLocation={userLocation}
         />
       </div>
     </div>
