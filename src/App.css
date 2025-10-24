@@ -1,0 +1,18 @@
+/* App Base Styles */
+.app-container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Storm theme overrides */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, serif;
+}
+
+/* Ensure proper z-index layering */
+header {
+  z-index: 1000;
+}
