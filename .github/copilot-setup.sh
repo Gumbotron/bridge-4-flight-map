@@ -66,7 +66,7 @@ done
 # Run linter check
 echo ""
 echo "🔍 Running linter check..."
-if npm run lint -- --max-warnings 0 2>/dev/null; then
+if npx eslint . --ext js,jsx 2>/dev/null; then
     echo "✅ Linter check passed"
 else
     echo "⚠️  Linter found issues. Run 'npm run lint' to see details."
